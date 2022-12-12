@@ -1,0 +1,66 @@
+<html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="./styles/main.css" />
+	</head>
+	<body>
+		<div class="container my-10">
+			<div class="mx-auto w-full lg:w-[80%] flex gap-8 flex-col lg:flex-row items-start">
+				<img
+					id="image"
+					src=""
+					class="lg:w-1/2 w-full h-[300px] sm:h-[350px] object-cover rounded-md shrink-0" />
+
+				<div class="shrink-0 flex-1 w-full space-y-4">
+					<h1
+						id="title"
+						class="font-bold text-xl bg-gradient-to-r from-rose-400 to-red-600 text-transparent bg-clip-text">
+						Loading...
+					</h1>
+					<p
+						id="description"
+						class="text-gray-600">
+						Loading...
+					</p>
+					<p id="tags"></p>
+					<div
+						id="bids"
+						class="flex gap-2 flex-wrap">
+						<h1 class="mb-2">Bids</h1>
+					</div>
+					<div id="seller"></div>
+					<div
+						id="countdown"
+						class="font-bold"></div>
+					<div
+						id="place-bid"
+						class="input-el w-full">
+						<label for="bid">Place Bid</label>
+						<form
+							id="bid-form"
+							class="flex !w-full">
+							<input
+								type="number"
+								min="0"
+								id="bid"
+								name="amount"
+								class="flex-1 !rounded-r-none" />
+							<button class="btn !rounded-l-none">Bid</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div
+				id="gallery"
+				class="mx-auto w-full lg:w-[80%] grid grid-cols-3 gap-6 mt-12">
+				<h1 class="col-span-full">Gallery</h1>
+			</div>
+		</div>
+
+		<script
+			type="module"
+			src="./pages/listing.js"></script>
+	</body>
+</html>

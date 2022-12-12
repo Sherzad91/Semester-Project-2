@@ -1,0 +1,81 @@
+<html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="./styles/main.css" />
+	</head>
+	<body>
+		<div class="container my-10">
+			<form
+				id="add-form"
+				class="w-full lg:w-[50%] mx-auto flex flex-col gap-4">
+				<div class="input-el">
+					<label for="title">Title</label>
+					<input
+						id="title"
+						name="title" />
+				</div>
+
+				<div class="input-el">
+					<label for="description">Description</label>
+					<input
+						id="description"
+						name="description" />
+				</div>
+
+				<div class="input-el">
+					<label for="endsAt">Deadline</label>
+					<input
+						type="date"
+						id="endsAt"
+						name="endsAt" />
+				</div>
+
+				<div class="input-el">
+					<label for="image-input">Image URL</label>
+					<div class="flex items-stretch">
+						<input
+							id="image-input"
+							class="flex-1 !rounded-r-none" />
+						<button
+							type="button"
+							id="add-image-btn"
+							class="btn !rounded-l-none">
+							Add
+						</button>
+					</div>
+					<div
+						id="image-holder"
+						class="mt-2 w-full bg-gray-100 grid grid-cols-4 gap-3 overflow-auto hidden"></div>
+				</div>
+
+				<div class="input-el">
+					<label for="tag-input">Tags</label>
+					<div class="flex items-stretch">
+						<input
+							id="tag-input"
+							class="flex-1 !rounded-r-none" />
+						<button
+							type="button"
+							id="add-tag-btn"
+							class="btn !rounded-l-none">
+							Add
+						</button>
+					</div>
+					<div
+						id="tag-holder"
+						class="mt-2 w-full bg-gray-100 flex items-center flex-wrap gap-2 hidden"></div>
+				</div>
+
+				<button
+					type="submit"
+					class="btn self-start">
+					Add Listing
+				</button>
+			</form>
+		</div>
+		<script
+			src="./pages/add-listing.js"
+			type="module"></script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply bg-gray-100;
+  }
+  .input-el {
+    @apply flex flex-col gap-1;
+  }
+
+  .input-el input {
+    @apply border border-black/30 rounded-md p-2;
+  }
+
+  .btn {
+    @apply bg-gradient-to-r hover:brightness-110 from-rose-500 to-red-600 font-semibold drop-shadow-lg text-white px-8 py-2 rounded-md active:opacity-80;
+  }
+}

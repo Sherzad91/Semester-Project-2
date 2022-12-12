@@ -1,0 +1,12 @@
+{
+  "name": "books-n-bids",
+  "version": "1.0.0",
+  "scripts": {
+    "start-tailwind": "tailwindcss -i ./styles/base.css -o ./styles/main.css --watch",
+    "build-tailwind": "tailwindcss -i ./styles/base.css -o ./styles/main.css --minify"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
